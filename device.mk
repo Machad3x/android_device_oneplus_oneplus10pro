@@ -52,7 +52,11 @@ SOONG_CONFIG_android_hardware_audio_run_64bit := true
 
 PRODUCT_PACKAGES += \
     android.hardware.audio.sounddose-vendor-impl \
-    android.hardware.bluetooth.audio-impl
+    android.hardware.bluetooth.audio-impl \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
+    libpalclient
 
 # Authsecret
 PRODUCT_PACKAGES += \
