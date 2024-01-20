@@ -152,7 +152,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor
 
 # Manifests
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest_taro.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest_taro.xml
 
 # Media
 PRODUCT_PACKAGES += \
