@@ -270,5 +270,8 @@ PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor \
     vendor.qti.hardware.systemhelper@1.0.vendor
 
+# USB
+PRODUCT_HAS_GADGET_HAL := true
+
 # Vendor Makefile
 $(call inherit-product, vendor/oneplus/oneplus10pro/oneplus10pro-vendor.mk)
