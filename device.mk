@@ -170,6 +170,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    OPlusCarrierConfig \
     OPlusFrameworks \
     OplusNfc \
     OPlusSettings \
