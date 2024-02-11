@@ -168,6 +168,14 @@ NEED_AIDL_NDK_PLATFORM_BACKEND := true
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
 
+# Overlays
+PRODUCT_PACKAGES += \
+    OPlusFrameworks \
+    OplusNfc \
+    OPlusSettings \
+    OplusSettingsProvider \
+    OplusSystemUI
+
 # Partitions - Dynamic
 PRODUCT_BUILD_ODM_IMAGE := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

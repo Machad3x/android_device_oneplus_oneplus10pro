@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "OPlusSettings",
+    product_specific: true,
+}

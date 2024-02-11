@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "OplusSystemUI",
+    product_specific: true,
+}
