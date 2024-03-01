@@ -184,9 +184,7 @@ PRODUCT_PACKAGES += \
     OplusNfc \
     OPlusSettings \
     OplusSettingsProvider \
-    OplusSystemUI \
-    WifiResTarget_spf \
-    WifiResTargetMainline_spf
+    OplusSystemUI
 
 # Partitions - Dynamic
 PRODUCT_BUILD_ODM_IMAGE := true
