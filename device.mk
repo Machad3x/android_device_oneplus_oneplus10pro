@@ -51,13 +51,38 @@ SOONG_CONFIG_android_hardware_audio += \
 SOONG_CONFIG_android_hardware_audio_run_64bit := true
 
 PRODUCT_PACKAGES += \
+    android.hardware.audio@7.1-impl \
+    android.hardware.audio.effect@7.1-impl \
+    android.hardware.audio.service \
     android.hardware.audio.sounddose-vendor-impl \
     android.hardware.bluetooth.audio-impl \
+    android.hardware.soundtrigger@2.3-impl \
+    audio.bluetooth.default \
+    audio.primary.default \
+    audio.primary.taro \
+    audio.r_submix.default \
+    audio.usb.default \
+    audioadsprpcd \
     libagm_compress_plugin \
     libagm_mixer_plugin \
     libagm_pcm_plugin \
+    libbatterylistener \
+    libeffectproxy \
     libpalclient \
-    sound_trigger.primary.taro:64
+    libfmpal \
+    libhapticgenerator \
+    libldnhncr \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libreverbwrapper \
+    libsndcardparser \
+    libtinycompress \
+    libvisualizer \
+    libvolumelistener \
+    sound_trigger.primary.taro:64 \
+    vendor.qti.hardware.AGMIPC@1.0-service \
+    vendor.qti.hardware.pal@1.0-impl
 
 # Authsecret
 PRODUCT_PACKAGES += \
