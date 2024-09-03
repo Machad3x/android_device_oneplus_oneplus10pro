@@ -7,10 +7,10 @@
 # Include the common OEM chipset BoardConfig.
 include device/oneplus/sm8450-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oneplus/wly
+DEVICE_PATH := device/oneplus/oneplus10pro
 
 # Display
-TARGET_SCREEN_DENSITY := 450
+TARGET_SCREEN_DENSITY := 420
 
 # DTB
 TARGET_KERNEL_CONFIG += vendor/oplus/wly.config
@@ -25,4 +25,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 
 # Include the proprietary files BoardConfig.
-include vendor/oneplus/wly/BoardConfigVendor.mk
+include vendor/oneplus/oneplus10pro/BoardConfigVendor.mk

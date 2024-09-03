@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=wly
+export DEVICE=oneplus10pro
 export DEVICE_COMMON=sm8450-common
 export VENDOR=oneplus
 

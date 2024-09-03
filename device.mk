@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2023 The LineageOS Project
+# Copyright (C) 2021-2023 The AOSPA Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -55,7 +55,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aospa
 
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
@@ -65,7 +65,7 @@ PRODUCT_PACKAGES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.oplus
+    vendor.aospa.powershare-service
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -75,4 +75,4 @@ PRODUCT_SOONG_NAMESPACES += \
 $(call inherit-product, device/oneplus/sm8450-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/oneplus/wly/wly-vendor.mk)
+$(call inherit-product, vendor/oneplus/oneplus10pro/oneplus10pro-vendor.mk)
