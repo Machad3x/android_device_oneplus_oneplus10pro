@@ -292,13 +292,8 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera
-lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so
-lib64/vendor.oplus.hardware.cammidasservice@1.0.so
-lib64/vendor.oplus.hardware.virtual_device.camera.manager-V1-ndk.so
 vendor/lib64/android.frameworks.stats-V1-ndk_platform.so
-odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
 odm/bin/hw/virtualcameraprovider
-odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc
 odm/etc/init/virtualcameraprovider.rc
 odm/lib64/libthirdcapability.so
 odm/lib64/camera/components/com.oplus.node.pilot.so
