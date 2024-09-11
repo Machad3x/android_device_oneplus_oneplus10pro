@@ -186,9 +186,7 @@ PRODUCT_PACKAGES += \
     OPlusSettings \
     OplusSettingsProvider \
     OplusSystemUI \
-    WifiResTarget_taro \
     WifiResTarget_spf \
-    WifiResTargetMainline_taro \
     WifiResTargetMainline_spf
 
 # Partitions - Dynamic

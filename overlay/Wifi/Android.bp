@@ -7,29 +7,11 @@ runtime_resource_overlay {
     vendor: true,
 }
 
-runtime_resource_overlay {
-    name: "WifiResTarget_taro",
-    manifest: "AndroidManifest-taro.xml",
-    resource_dirs: [
-        "taro/res",
-    ],
-    vendor: true,
-}
-
 runtime_resource_overlay  {
     name: "WifiResTargetMainline_spf",
     manifest: "AndroidGoogleManifest-spf.xml",
     resource_dirs: [
         "spf/res",
-    ],
-    vendor: true,
-}
-
-runtime_resource_overlay  {
-    name: "WifiResTargetMainline_taro",
-    manifest: "AndroidGoogleManifest-taro.xml",
-    resource_dirs: [
-        "taro/res",
     ],
     vendor: true,
 }
