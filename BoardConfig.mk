@@ -41,6 +41,9 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 # Build
 BUILD_BROKEN_DUP_RULES := true
 
+# Fingerprint
+TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
+
 # Firmware
 ADD_RADIO_FILES := false
 
