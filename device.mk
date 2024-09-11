@@ -159,7 +159,6 @@ PRODUCT_PACKAGES += \
 
 # Manifests
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/oneplus10pro_vendor_framework_compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/phone2_vendor_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/vintf/manifest_taro.xml \
     $(DEVICE_PATH)/configs/vintf/manifest_oneplus10pro.xml
