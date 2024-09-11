@@ -2314,6 +2314,7 @@ vendor/etc/seccomp_policy/qcrilnr@2.0.policy
 vendor/etc/ssg/tz_whitelist.json
 vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml
 vendor/etc/telephony_packages.xml
+odm/lib64/libcommcenterutils.so
 vendor/lib64/deviceInfoServiceModuleNr.so
 vendor/lib64/libQtiRilLoadable.so
 vendor/lib64/liblqe.so
