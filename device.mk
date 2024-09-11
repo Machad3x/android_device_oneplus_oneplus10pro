@@ -1,4 +1,5 @@
 DEVICE_PATH := device/oneplus/oneplus10pro
+HARDWARE_PATH := hardware/oplus
 
 # A/B
 ENABLE_VIRTUAL_AB := true
@@ -233,7 +234,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+    $(DEVICE_PATH) \
+    hardware/oplus
 
 # Storage
 PRODUCT_CHARACTERISTICS := nosdcard

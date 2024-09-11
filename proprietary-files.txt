@@ -295,10 +295,12 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so
 lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 lib64/vendor.oplus.hardware.virtual_device.camera.manager-V1-ndk.so
+vendor/lib64/android.frameworks.stats-V1-ndk_platform.so
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
 odm/bin/hw/virtualcameraprovider
 odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc
 odm/etc/init/virtualcameraprovider.rc
+odm/lib64/libthirdcapability.so
 odm/lib64/camera/components/com.oplus.node.pilot.so
 odm/lib64/camera/components/com.oplus.node.preview.so
 odm/lib64/camera/components/com.oplus.node.sstabdefer.so
@@ -1795,6 +1797,8 @@ odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 odm/bin/init.oplus.fingerprints.sh
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml
+odm/lib64/android.hardware.biometrics.common-V1-ndk_platform.so
+odm/lib64/android.hardware.biometrics.fingerprint-V1-ndk_platform.so
 odm/lib64/hw/fingerprint.goodix_G7.default.so
 odm/lib64/anc.hal.so
 odm/lib64/libgf_hal_G7.so
@@ -2353,6 +2357,7 @@ vendor/lib64/qcrild_libqcrilnrutils.so
 vendor/lib64/qtiPeripheralMgr.so
 vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
+vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.data.connection@1.0.so
 vendor/lib64/vendor.qti.hardware.data.connection@1.1.so
 vendor/lib64/vendor.qti.hardware.data.connectionfactory-V1-ndk_platform.so
@@ -2362,6 +2367,7 @@ vendor/lib64/vendor.qti.hardware.data.iwlan@1.1.so
 vendor/lib64/vendor.qti.hardware.data.ka-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
+vendor/lib64/vendor.oplus.hardware.ims-V1-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.radio.ims-V7-ndk_platform.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
@@ -2385,6 +2391,7 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
+vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so
 
 # SCVE
 vendor/lib64/libscveCommon.so

@@ -120,6 +120,11 @@ TARGET_SCREEN_DENSITY := 420
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# SEPolicy
+SEPOLICY_PLATFORM := sm8450
+SEPOLICY_PATH := device/qcom/sepolicy_vndr/sm8450
+include hardware/oplus/sepolicy/qti/SEPolicy.mk
+
 # UFS
 SOONG_CONFIG_NAMESPACES += ufsbsg
 SOONG_CONFIG_ufsbsg += ufsframework
