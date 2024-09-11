@@ -55,8 +55,35 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        odm/bin/hw/vendor.pixelworks.hardware.display.iris-service)
+            grep -q "libprocessgroup.so" "${2}" || "${PATCHELF}" --add-needed "libprocessgroup.so" "${2}"
+            ;;
+        odm/etc/camera/CameraHWConfiguration.config)
+            sed -i "/SystemCamera = / s/1;/0;/g" "${2}"
+            sed -i "/SystemCamera = / s/0;$/1;/" "${2}"
+            ;;
+        product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml)
+            sed -i "s/\/my_product/\/product/" "${2}"
+            ;;
+        system_ext/lib64/libwfdnative.so)
+            sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
+        vendor/etc/media_*/video_system_specs.json)
+            sed -i "/max_retry_alloc_output_timeout/ s/2000/0/" "${2}"
+            ;;
+        vendor/etc/libnfc-nci.conf)
+            sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"
+            ;;
+        vendor/etc/libnfc-nxp.conf)
+            sed -i "/NXPLOG_\w\+_LOGLEVEL/ s/0x03/0x02/" "${2}"
+            sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"
+            ;;
         vendor/bin/hw/android.hardware.security.keymint-service-qti)
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
+            ;;
+        vendor/etc/media_codecs.xml|vendor/etc/media_codecs_cape.xml|vendor/etc/media_codecs_cape_vendor.xml|vendor/etc/media_codecs_taro.xml|vendor/etc/media_codecs_taro_vendor.xml)
+            [ "$2" = "" ] && return 0
+            sed -Ei "/media_codecs_(google_audio|google_c2|google_telephony|google_video)/d" "${2}"
             ;;
     esac
 }
