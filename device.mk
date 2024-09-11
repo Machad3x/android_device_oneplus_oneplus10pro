@@ -274,4 +274,4 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.systemhelper@1.0.vendor
 
 # Vendor Makefile
-$(call inherit-product, vendor/oneplus/onepus10pro/oneplus10pro-vendor.mk)
+$(call inherit-product, vendor/oneplus/oneplus10pro/oneplus10pro-vendor.mk)
