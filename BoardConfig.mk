@@ -57,6 +57,8 @@ BOARD_RAMDISK_USE_LZ4 := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 TARGET_HAS_GENERIC_KERNEL_HEADERS := true
 
+BOARD_BOOTCONFIG += androidboot.selinux=permissive
+
 # Partitions - A/B
 AB_OTA_PARTITIONS += \
     boot \
