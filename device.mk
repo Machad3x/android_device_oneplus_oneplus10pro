@@ -139,7 +139,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.target.rc
+    init.target.rc \
+    init.oplus.rc \
+    ueventd.oplus.rc
 
 # Kernel
 KERNEL_PREBUILT_DIR := $(DEVICE_PATH)-kernel
