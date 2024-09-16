@@ -16,22 +16,8 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientBrighteningThresholds">
-        <item>10000</item>
-        <item>5000</item>
-        <item>4333</item>
-        <item>3666</item>
-        <item>3000</item>
-        <item>2760</item>
-        <item>2520</item>
-        <item>2280</item>
-        <item>2040</item>
-        <item>1800</item>
-        <item>800</item>
-        <item>527</item>
-        <item>500</item>
-        <item>400</item>
-        <item>248</item>
-        <item>100</item>
+        <item>600</item>
+        <item>300</item>
     </integer-array>
 
     <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
