@@ -46,6 +46,7 @@ TARGET_BOOTLOADER_BOARD_NAME := taro
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio.sounddose-vendor-impl \
     android.hardware.bluetooth.audio-impl
 
 # Authsecret
