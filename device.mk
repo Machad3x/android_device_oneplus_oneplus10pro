@@ -44,6 +44,10 @@ SHIPPING_API_LEVEL := 32
 TARGET_BOARD_PLATFORM := taro
 TARGET_BOOTLOADER_BOARD_NAME := taro
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl
+
 # Authsecret
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0.vendor
