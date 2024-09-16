@@ -212,10 +212,9 @@ PRODUCT_PACKAGES += \
     qrtr-lookup \
     libqrtr
 
-# Power
+# Powershare
 PRODUCT_PACKAGES += \
     vendor.aospa.powershare-service
-    android.hardware.power.stats@1.0-service.mock
 
 # QTI Components
 TARGET_COMMON_QTI_COMPONENTS := all
