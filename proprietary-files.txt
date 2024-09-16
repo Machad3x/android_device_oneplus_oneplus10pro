@@ -510,6 +510,7 @@ vendor/lib64/camx.provider@2.4-legacy.so
 vendor/lib64/camx.provider@2.5-legacy.so
 vendor/lib64/camx.provider@2.6-legacy.so
 vendor/lib64/camx.provider@2.7-legacy.so
+vendor/lib64/com.qti.chiusecaseselector.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/com.qti.feature2.demux.so
 vendor/lib64/com.qti.feature2.derivedoffline.so
@@ -2085,6 +2086,9 @@ vendor/lib64/vendor.qti.hardware.limits@1.0.so
 vendor/lib64/vendor.qti.hardware.limits@1.1.so
 
 # Media
+odm/lib64/liboplusvppfilter.so
+odm/lib64/libaiboost_sr.so
+odm/lib64/libosie_process.so
 vendor/etc/media_taro/video_system_specs.json
 vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_c2_audio.xml
