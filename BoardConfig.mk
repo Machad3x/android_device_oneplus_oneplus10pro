@@ -58,7 +58,7 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # Charging
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/chg_enable
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
 
 # Fingerprint
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
@@ -135,6 +135,9 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 201326592
 BOARD_USES_METADATA_PARTITION := true
 BOARD_USES_VENDOR_DLKMIMAGE := true
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+
 # PowerShare
 TARGET_POWERSHARE_NODE := /sys/class/qcom-battery/wireless_boost_en
 
@@ -146,6 +149,9 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 107
 TARGET_SCREEN_DENSITY := 420
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
 
 # SEPolicy
 SEPOLICY_PLATFORM := sm8450
