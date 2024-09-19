@@ -45,10 +45,8 @@ TARGET_BOARD_PLATFORM := taro
 TARGET_BOOTLOADER_BOARD_NAME := taro
 
 # Audio
-SOONG_CONFIG_NAMESPACES += android_hardware_audio
-SOONG_CONFIG_android_hardware_audio += \
-    run_64bit
-SOONG_CONFIG_android_hardware_audio_run_64bit := true
+AUDIO_HAL_DIR := vendor/qcom/opensource/audio-hal/primary-hal
+QCV_FAMILY_SKUS := taro
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl \
@@ -58,30 +56,12 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
-    audio.primary.taro \
-    audio.r_submix.default \
-    audio.usb.default \
-    audioadsprpcd \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libbatterylistener \
     libeffectproxy \
-    libpalclient \
     libfmpal \
     libhapticgenerator \
     libldnhncr \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
     libreverbwrapper \
-    libsndcardparser \
-    libtinycompress \
-    libvisualizer \
-    libvolumelistener \
-    sound_trigger.primary.taro:64 \
-    vendor.qti.hardware.AGMIPC@1.0-service \
-    vendor.qti.hardware.pal@1.0-impl
+    libvisualizer
 
 # Authsecret
 PRODUCT_PACKAGES += \

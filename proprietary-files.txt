@@ -153,9 +153,6 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/etc/card-defs.xml
-vendor/lib64/hw/audio.primary.default.so
-vendor/lib64/hw/audio.primary.taro.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libEvrcSwCodec.so
@@ -164,7 +161,6 @@ vendor/lib64/libadm.so
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
 -vendor/lib64/libar-gsl.so
--vendor/lib64/libar-pal.so
 -vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libcapiv2svacnnvendor.so
@@ -180,36 +176,21 @@ vendor/lib64/libmcs.so
 vendor/lib64/libqtigefar.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
-vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
-vendor/lib64/libpalclient.so
-
-# Audio (AGM)
--vendor/lib64/libagm.so
--vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio (Configurations)
-etc/audio_effects.xml
 vendor/etc/audio/sku_taro/audio_effects.conf
-vendor/etc/audio/sku_taro/audio_effects.xml
-vendor/etc/audio/sku_taro/audio_policy_configuration.xml
 vendor/etc/audio/sku_taro/mixer_paths_waipio_cdp.xml
-vendor/etc/audio/sku_taro/mixer_paths_waipio_mtp.xml
 vendor/etc/audio/sku_taro/mixer_paths_waipio_qrd.xml
 vendor/etc/audio/sku_taro/resourcemanager_upd.xml
 vendor/etc/audio/sku_taro/resourcemanager_waipio_cdp.xml
-vendor/etc/audio/sku_taro/resourcemanager_waipio_mtp.xml
 vendor/etc/audio/sku_taro/resourcemanager_waipio_qrd.xml
-vendor/etc/audio/sku_taro_qssi/audio_policy_configuration.xml
 vendor/etc/a2dp_audio_policy_configuration.xml
 vendor/etc/audio_policy_configuration.xml
 vendor/etc/audio_policy_volumes.xml
 vendor/etc/bluetooth_qti_audio_policy_configuration.xml
 vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
 vendor/etc/default_volume_tables.xml
-vendor/etc/microphone_characteristics.xml
-vendor/etc/r_submix_audio_policy_configuration.xml
 vendor/etc/usb_audio_policy_configuration.xml
-vendor/etc/usecaseKvManager.xml
 
 # Audio (firmware)
 odm/firmware/tfa98xx.cnt
