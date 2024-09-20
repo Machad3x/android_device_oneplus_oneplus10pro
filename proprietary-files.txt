@@ -2354,6 +2354,7 @@ vendor/etc/init/vendor.qti.rmt_storage.rc
 # RIL
 vendor/app/IWlanService/IWlanService.apk
 vendor/bin/hw/qcrilNrd
+vendor/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk_platform.so
 odm/lib64/libdmtp-protos-lite.so
 odm/lib64/lib-virtual-modem-protos.so
 odm/lib64/libcommcenterfw.so
