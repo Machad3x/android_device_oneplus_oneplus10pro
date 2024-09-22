@@ -55,6 +55,12 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service)
+            grep -q libshims_fingerprint.oplus.so "${2}" || "${PATCHELF}" --add-needed libshims_fingerprint.oplus.so "${2}"
+            ;;
+        odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml)
+            sed -ni "/android.hardware.biometrics.fingerprint/{x;s/hal format/hal override=\"true\" format/;x};x;1!p;\${x;p}" "${2}"
+            ;;
         odm/bin/hw/vendor.pixelworks.hardware.display.iris-service)
             grep -q "libprocessgroup.so" "${2}" || "${PATCHELF}" --add-needed "libprocessgroup.so" "${2}"
             ;;

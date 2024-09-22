@@ -134,7 +134,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.oplus
+    android.hardware.biometrics.fingerprint@2.3-service.oplus \
+    libshims_fingerprint.oplus
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -252,6 +253,10 @@ PRODUCT_PACKAGES += \
     qrtr-ns \
     qrtr-lookup \
     libqrtr
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-qti
 
 # Powershare
 PRODUCT_PACKAGES += \
